@@ -115,7 +115,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Equipment:</strong> KU Libraries' laptop computers will be available for participants to use. Participants may optionally bring their own laptop. No special software is required for this workshop. Participants are also required to abide by
+  <strong>Equipment:</strong> KU Libraries' laptop computers (Windows 10) will be available for participants to use. Participants may optionally bring their own laptop. No special software is required for this workshop. Participants are required to abide by
   {% if page.carpentry == "swc" %}
   Software Carpentry's
   {% elsif page.carpentry == "dc" %}

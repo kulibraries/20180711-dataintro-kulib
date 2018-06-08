@@ -115,16 +115,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
+  <strong>Equipment:</strong> KU Libraries' laptop computers will be available for participants to use. Participants may optionally bring their own laptop. No special software is required for this workshop. Participants are also required to abide by
   {% if page.carpentry == "swc" %}
   Software Carpentry's
   {% elsif page.carpentry == "dc" %}
   Data Carpentry's
   {% elsif page.carpentry == "lc" %}
-  Library Carpentry's
+  The Carpentries'
   {% endif %}
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
@@ -219,6 +216,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   {% include lc/schedule.html %}
 {% endif %}
 
+<hr/>
+
 {% comment %}
   Collaborative Notes
 
@@ -229,13 +228,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 {% endcomment %}
+<h2 id="notes">Notes</h2>
 {% if page.collaborative_notes %}
 <p id="collaborative_notes">
-  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a>, called an Etherpad, for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
-
-<hr/>
 
 {% comment %}
   SYLLABUS
@@ -281,6 +279,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   'tools/check' as well.
 {% endcomment %}
 
+{% comment %}
 <h2 id="setup">Setup</h2>
 
 <p>
@@ -301,6 +300,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+{% endcomment %}
 
 {% comment %}
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}

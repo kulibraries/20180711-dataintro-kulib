@@ -235,6 +235,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </p>
 {% endif %}
 
+<hr/>
+
 {% comment %}
   SYLLABUS
 
